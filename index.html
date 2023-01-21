@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://kit.fontawesome.com/a9deb1b569.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    <script src="/Script.js"></script>
+   
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -26,17 +26,17 @@
 
     
         <!-- Barre de navigation  -->
-
-        <nav class="navbar navbar-expand-md bg-dark navbar-light rounded-1.5 ">
+      
+        <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-light rounded-1.5 ">
             <div class="container">
+              <img id="logo_moi" src="./img/MD.jpg">
                 <a class="navbar-brand text-uppercase fw-bolder text-light" href="index.html">
-                    <span class=" bg-danger p-1 rounded-3 text-light ">Mickael</span> DIJOUX
                 </a>
-                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-end">
                         <li class="nav-item active mx-3">
                             <a class="nav-link text-light" href="#dijouxmickael">Qui suis-je ?</a>
@@ -67,25 +67,16 @@
             <div class="container d-flex justify-content-end align-items-end my-5">
                 <div class="row gy-4 gy-md-0 text-center py-5">
                     <div class="col-12 ">
-                        <hr id="line1" class="bg-danger border-1.1 border-top border-white">
+                        <hr id="line2" class="bg-danger border-1.1 border-top border-white">
                         <h1 id="titre" class=" py-5 text-white my-5">Développeur Web et Web Mobile</h1>
-                    
-                
-                
                         <h3 class="fw-light py-5 my-4 text-white ">Bienvenue dans mon univers créatif</h3> 
-                        <a id="btn1" href="#expertise" class="btn btn-dark btn-sm btn-outline-gradient text-white " tabindex="-1" role="button" aria-disabled="true">Mes compétences</a>
-                        
-            </div>
-            </div>
-            </div>
-       
-    </header>
-        </section>
-  
-
-        <!--Expertise -->
-
-
+                        <a id="btn1" href="#expertise" class="btn-sm btn-outline-dark btn text-white " tabindex="-1" role="button" aria-disabled="true">Mes compétences</a>       
+                  </div>
+               </div>
+            </div> 
+       </header>
+   </section>
+        <!-- Expertise-->
         <section id="expertise" class="py-2 bg-light my-2">
             <div class="container">
                 <h2 class="mb-0 fw-bold">Mes compétences </h2>
@@ -104,7 +95,7 @@
                                 <p class="fw-bold m-0 ">HTML5</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col m-3">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
                                     style="width:80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">80%
@@ -128,7 +119,7 @@
                                 <p class="fw-bold m-0">CSS3</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col m-3">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                     role="progressbar" style="width:80%;" aria-valuenow="80" aria-valuemin="0"
@@ -152,7 +143,7 @@
                                 <p class="fw-bold m-0">JS</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col m-3">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
                                     role="progressbar" style="width:50%;" aria-valuenow="50" aria-valuemin="0"
@@ -174,7 +165,7 @@
                                 <p class="fw-bold m-0">BS</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col m-3">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                                     role="progressbar" style="width:80%;" aria-valuenow="80" aria-valuemin="0"
@@ -197,10 +188,10 @@
                                 <p class="fw-bold m-0">Angular</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col m-4">
                             <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 20%;" aria-valuenow="0"
-                                    aria-valuemin="0" aria-valuemax="20">20%
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%;" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="50">50%
                                 </div>
                             </div>
                         </div>
@@ -227,7 +218,7 @@
                               <p class="fw-bold m-0">FIGMA</p>
                           </div>
                       </div>
-                      <div class="col">
+                      <div class="col m-3">
                           <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
                                   style="width:80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">80%
@@ -251,7 +242,7 @@
                               <p class="fw-bold m-0">Node JS</p>
                           </div>
                       </div>
-                      <div class="col">
+                      <div class="col m-3">
                           <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                   role="progressbar" style="width:50%;" aria-valuenow="50" aria-valuemin="0"
@@ -275,7 +266,7 @@
                               <p class="fw-bold m-0">Power<br>point</p>
                           </div>
                       </div>
-                      <div class="col">
+                      <div class="col m-3">
                           <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
                                   role="progressbar" style="width:80%;" aria-valuenow="80" aria-valuemin="0"
@@ -297,7 +288,7 @@
                               <p class="fw-bold m-0">git</p>
                           </div>
                       </div>
-                      <div class="col">
+                      <div class="col m-3">
                           <div class="progress">
                               <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
                                   role="progressbar" style="width:60%;" aria-valuenow="60" aria-valuemin="0"
@@ -339,9 +330,20 @@
 
         <section id="portfolio" class="py-5">
             <div class="container">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-end">
+                  <div id="box1"class="row">
+                    <hr id="line2" class="bg-danger border-1.1 border-top border-dark" style="width:50%;">
                 <h2 class="mb-0">Mon portfolio</h2>
-                <h3 class="fw-light fs-5">Projets perso et pro</h3>
-        
+                <h3 id="projet" class="fw-light fs-5 col-md d-flex flex-row">Projets perso et pro</h3>
+              </div>
+              </div>
+                <div id="pict" class="col">
+                <img id="photo_moi"src="./img/311686756_10227628559246925_5480628523166697955_n.jpg" alt="Photo_Mickael" width="50%"
+                class="rounded-2 shadow mb-5">
+              </div>
+        </div>
+     
                 <div class="row gy-4 gy-md-0 mt-4">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div id="card" class="card">
@@ -359,12 +361,9 @@
                                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body">
 
-                                    
                                     <!-- Carousel/Maquette figma-->
-
-
+                                    <div class="offcanvas-body">
                                     <div id="carouselProject1" class="carousel carousel-dark slide shadow h-100"
                                          data-bs-ride="carousel" data-bs-touch="true">
                                         <div class="carousel-inner h-100">
@@ -385,6 +384,8 @@
                             </div>
                         </div>
                     </div>
+                    
+            
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./Assets/Project_AfpaSite.png" class="card-img-top " style="width: 100%;height: 170px;" alt="...">
@@ -543,7 +544,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
-                            <img src="./Assets/Projet_Onygo.png" class="card-img-top" style="width: 100%;height:170px" alt="...">
+                            <img src="./Assets/Projet_Onygo.png" class="card-img-top" style="width: 100%;height:170px" alt="ONYGO_project">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Onygo Angular</h5>
                                 <p class="card-text text-center">Création d'une application web avec utilisation d'une API</p>
@@ -593,12 +594,22 @@
                 </div>
             </div>
         </section>
+       
+<div class="col d-flex justify-content-center my-5">
+
+ <div class="row">
+
+  <a href="./doc/moncv.pdf" class="btn btn-warning mt-5">Télécharger mon CV au format pdf</a>
+</div>
+</div>
+
+
 
 
         <!-- Formulaire -->
 
 
-        <section id="contact1" class="py-5 bg-light">
+        <section id="contact1" class="py-5 my-5 bg-light">
             <div class="container">
         
                 <div class="row gy-4 mt-4 d-flex align-items-center justify-content-center">
@@ -624,13 +635,13 @@
                                                 </div>
                                                 <div class="col-6 my-2">
                                                     <label for="name" class="form-label">Nom</label>
-                                                    <input name="name" type="text" class="form-control" id="name">
+                                                    <input name="nom" type="text" class="form-control" id="name">
                                                 </div>
                                                 <div class="col-12 my-2">
                                                     <label for="email" class="form-label">Adresse-email</label>
                                                     <input name="email" type="email" class="form-control" id="email">
                                                 </div>
-                                                <div class="col-12 my-2">
+                                               <div class="col-12 my-2">
                                                     <label for="message" class="form-label">Message</label>
                                                     <textarea name="message" class="form-control" id="message" rows="3"></textarea>
                                                 </div>
@@ -651,7 +662,7 @@
         </section>
     </main>
         
-        <footer class="border-top">
+        <footer>
         <div class="container py-5">
             <div class="row gy-4 align-items-center">
                 <div class="col-12 col-md-4 text-md-center">
@@ -678,7 +689,7 @@
                 
                         <li class="list-inline-item">
                             <a  href="https://github.com/Mikadjx" class="text-decoration-none text-dark" data-bs-toggle="tooltip" title="GitHub">
-                                <i class="fa-brands fa-github"></i>
+                              <i class="fab fa-github fa-2x"></i>
                             </a>
                         </li>
                     </ul>
@@ -1238,7 +1249,7 @@
                 </div>
             </div>
         </div>
-    
+        <script src="/script.js"></script>
 
                   <!--Script Bootsrap-->
 
