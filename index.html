@@ -63,7 +63,7 @@
 
         <!-- Section 1 -->
 
-        <section class="py-5 my-4">
+        <section class="py-5 my-5">
             <div class="container d-flex justify-content-end align-items-end my-5">
                 <div class="row gy-4 gy-md-0 text-center py-5">
                     <div class="col-12 ">
@@ -328,7 +328,7 @@
 
         <!--Port-folio-->
 
-        <section id="portfolio" class="py-5">
+        <section id="portfolio" class="py-5 my-5">
             <div class="container">
               <div class="row">
                 <div class="col-md-6 d-flex align-items-center justify-content-end">
@@ -343,9 +343,8 @@
                 class="rounded-2 shadow mb-5">
               </div>
         </div>
-     
                 <div class="row gy-4 gy-md-0 mt-4">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-xs-12  col-sm-6 col-md-4 col-lg-3">
                         <div id="card" class="card">
                             <img src="./Assets/figma__accueil_copie.jpg" class="card-img-top" style=" width:100%;height:170px" alt="...">
                             <div class="card-body text-center">
@@ -358,7 +357,7 @@
                                  aria-labelledby="titelProjet1">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="titelProjet1">Maquette Figma</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    <button onclick="stop()" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                 </div>
 
@@ -367,25 +366,22 @@
                                     <div id="carouselProject1" class="carousel carousel-dark slide shadow h-100"
                                          data-bs-ride="carousel" data-bs-touch="true">
                                         <div class="carousel-inner h-100">
-                                            <div class="carousel-item h-100 active" data-bs-interval="10000">
-                                                <!--<img id="logo1" src="./Assets/Logo.png"
-                                                     class="d-flex justify-content-center align-items-center w-50 h-50" alt="Image slide 1">-->
-                                                     <iframe width="560" height="400" src="https://www.youtube.com/embed/bmL4jYulz2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; autostop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <div class="carousel-item h-100 w-100 active" data-bs-interval="10000">
+                                    
+                                                     <video id="video1" width="320" height="240" controls>
+                                                   <source src="./img/Afpasite.mp4" type=video/mp4>
+                                                    </video>
+                          
+                                                  
                                                 <div class="carousel-caption d-none d-md-block">
-                                                   
-                                                   
                                                 </div>
                                             </div>
-                                          
                                         </div>
-                                      
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-            
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <img src="./Assets/Project_AfpaSite.png" class="card-img-top " style="width: 100%;height: 170px;" alt="...">
@@ -488,7 +484,7 @@
                             <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3"
                                  aria-labelledby="titelProjet3">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="titelProjet1">Projet 3</h5>
+                                    <h5 class="offcanvas-title" id="titelProjet1"></h5>
                                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                 </div>
@@ -503,36 +499,38 @@
                                          data-bs-ride="carousel" data-bs-touch="true">
                                         <div class="carousel-inner h-100">
                                             <div class="carousel-item h-100 active" data-bs-interval="10000">
-                                                <img src=""
-                                                     class="d-block w-100" alt="Image slide 1">
+                                              <div id="mastermind" class="col d-flex justify-content-center">
+                                                <img src="./img/il_794xN.662141250_39tm.webp"
+                                                     class="d-block w-50 h-100 my-5" alt="Image slide 1">
+                                                    </div>
                                                 <div class="carousel-caption d-none d-md-block">
-                                                    <h5>Slide 1</h5>
-                                                  
+                                                    <h5 class="text-dark">MasterMind - Java Script</h5>
+                                                    <a class="btn btn-success" href="" role="button">View code</a>
                                                 </div>
                                             </div>
                                             <div class="carousel-item h-100" data-bs-interval="2000">
                                                 <img src=""
-                                                     class="d-block w-100" alt="Image slide 2">
+                                                     class="d-block w-100" alt="">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                    <h5>Slide 2</h5>
+                                                    <h5></h5>
                                                  
                                                 </div>
                                             </div>
                                             <div class="carousel-item h-100">
                                                 <img src=""
-                                                     class="d-block w-100" alt="Image slide 3">
+                                                     class="d-block w-100" alt="">
                                                 <div class="carousel-caption d-none d-md-block">
-                                                    <h5>Slide 3</h5>
+                                                    <h5></h5>
                                                     
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="carousel-control-prev" type="button"
+                                        <button class="carousel-control-prev carousel carousel-dark slide" type="button"
                                                 data-bs-target="#carouselProject3" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
-                                        <button class="carousel-control-next" type="button"
+                                        <button class="carousel-control-next carousel carousel-dark slide" type="button"
                                                 data-bs-target="#carouselProject3" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
@@ -555,7 +553,7 @@
                                  aria-labelledby="titelProjet4">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="titelProjet1">ONYGO</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    <button onclick="stopVideo()" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
@@ -568,14 +566,17 @@
                                             <div class="carousel-item h-100 active" data-bs-interval="10000">
                                                <!--<img src=""
                                                      class="d-block w-100" alt="Image slide 1">-->
-                                                     <iframe width="560" height="400" src="https://www.youtube-nocookie.com/embed/KhEPx3_b4E0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                                                <div class="carousel-caption d-none d-md-block">
+                                                     <video id="video2" width="320" height="240" controls>
+                                                      <source src="./img/Onygo.mp4" type=video/mp4>
+                                                       </video>
+                             
                                                     
                                                    
                                                 </div>
                                             </div>
                                           
                                         </div>
+                                        <!--
                                         <button class="carousel-control-prev" type="button"
                                                 data-bs-target="#carouselProject4" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -585,7 +586,7 @@
                                                 data-bs-target="#carouselProject4" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             </div>
@@ -608,22 +609,15 @@
 
         <!-- Formulaire -->
 
-
         <section id="contact1" class="py-5 my-5 bg-light">
             <div class="container">
-        
                 <div class="row gy-4 mt-4 d-flex align-items-center justify-content-center">
                     <div class="col-12 col-md-5 p-5">
                         <h2 class="mb-0">Un projet de création web ?</h2>
                 <h3 class="fw-light fs-5">Allons en discuter autour d'un café</h3>
-        
-                        <img  src="./img/Img14.jpg" alt="Image d'une tasse de café" width="100%">
-                    </div>
+                        <img  src="./img/Img14.jpg" alt="Image d'une tasse de café" width="100%"> </div>
                     <div class="col-12 offset-md-1 col-md-6 my-5 text-center ">
-                
-                        
                                 <div class="row gx-4 gx-lg-5 justify-content-center align-items-center mb-5 mx-2">
-                                
                                         <h2 class="mt-0 my-5">Contact</h2>
                                         <hr class="divider mt-2" />
                                         <p class="text-muted mb-5 my-5">
@@ -631,37 +625,28 @@
                                             <form class="row">
                                                 <div class="col-6 my-2 ">
                                                     <label for="firstname" class="form-label">Prénom</label>
-                                                    <input name="firstname" type="text" class="form-control" id="firstname">
-                                                </div>
+                                                    <input name="firstname" type="text" class="form-control" id="firstname"> </div>
                                                 <div class="col-6 my-2">
                                                     <label for="name" class="form-label">Nom</label>
-                                                    <input name="nom" type="text" class="form-control" id="name">
-                                                </div>
+                                                    <input name="nom" type="text" class="form-control" id="name"></div>
                                                 <div class="col-12 my-2">
                                                     <label for="email" class="form-label">Adresse-email</label>
-                                                    <input name="email" type="email" class="form-control" id="email">
-                                                </div>
+                                                    <input name="email" type="email" class="form-control" id="email"> </div>
                                                <div class="col-12 my-2">
                                                     <label for="message" class="form-label">Message</label>
-                                                    <textarea name="message" class="form-control" id="message" rows="3"></textarea>
-                                                </div>
+                                                    <textarea name="message" class="form-control" id="message" rows="3"></textarea> </div>
                                                 <div class="col-12 my-2">
                                                     <button type="submit" class="btn btn-primary w-100">Envoyer</button>
-                                                
                                                 </div>
                                             </form>
-                    
                                         </div>
                                     </div>
-                                </div>
-                        
-      </div>
-      </div>
-      </div>
-
-        </section>
-    </main>
-        
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+              </section>
+          </main>
         <footer>
         <div class="container py-5">
             <div class="row gy-4 align-items-center">
@@ -673,10 +658,7 @@
                         </li>
                     </ul>
                 </div>
-
                 <!--Logo -->
-
-
 
                 <div class="col-12 col-md-4 text-md-end">
                     <ul class="list-inline mb-0">
@@ -698,7 +680,6 @@
         </div>
 
         <!-- Modal ( Mention légales)  -->
-
 
         <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
@@ -1249,7 +1230,7 @@
                 </div>
             </div>
         </div>
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
 
                   <!--Script Bootsrap-->
 
@@ -1257,21 +1238,15 @@
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"></script>
 
-
-
                   <!--Script Java Script-->
 
-
-                <script>
-                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                <script> var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
                     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                         return new bootstrap.Tooltip(tooltipTriggerEl)
                     })
-                </script>
-
+               </script>
           </footer>
-     </body>
-        
+     </body>   
  </html>
         
     

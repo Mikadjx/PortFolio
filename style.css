@@ -1,42 +1,7 @@
+
+/*Import font-family*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
-.card {
-    border-radius: 4px;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-}
-
-
-.card:hover {
-cursor: pointer;
-
-
-}
-
-#carouselProject1 #carouselProject4 iframe {
-
-  margin-left:34%;
-  margin-bottom: 10%;
-  
-}
-
-
-img {
-  border-radius: 1%;
-
-}
-#imgdesign:hover {
-
-  cursor:pointer;
-  transform: scale(1.3);
-
-}
-
-
-
-.navbar ul a:hover {
-  transform: scale(1.04);
- 
-} 
 
 
 
@@ -49,22 +14,47 @@ header {
   height:890px; 
 }
 
+.card {
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+.card:hover {
+cursor: pointer;
+}
+
+
+/*Position carousel movies*/
+
+#carouselProject1 #carouselProject4 iframe {
+  margin-left:34%;
+  margin-bottom: 10%;
+}
+
+img {
+  border-radius: 1%;
+}
+
+#imgdesign:hover {
+  cursor:pointer;
+  transform: scale(1.3);
+}
+
+.navbar ul a:hover {
+  transform: scale(1.04);
+} 
+
 #titre {
 font-family:'Times New Roman', Times, serif;
 }
 
 
 #btn1 {
-
   text-transform:capitalize;
-
-
 }
 
 #btn1:hover {
-
   transform:scale(1.1);
-
 }
 
 .hr {
@@ -76,7 +66,6 @@ font-family:'Times New Roman', Times, serif;
 }
 
 #line2 {
-
   margin-top:20px;
   color: inherit;
   background-color: currentColor;
@@ -91,20 +80,17 @@ margin-left: 25%;
 }
 
 #git {
-
   width:50%;
   height: 50%;
 }
 
 hr {
-
   margin-top:50px;
   color: inherit;
   background-color: currentColor;
   border: 0;
   opacity: 0.2;
   width:50%;
-
 }
 
 #hr2{
@@ -122,11 +108,16 @@ hr {
   }
 
   img#logo_moi {
-
     width: 8vw;
   }
 
+  #video1 {
+  width: 100%;
+  height:100%;
+  }
+ 
 
+/*Responsive tablette - mobile */
 
   @media (max-width: 599px) {
     .proj-grid {
@@ -134,11 +125,9 @@ hr {
     }
   
     img#logo_moi {
-
       width: 20vw;
     }
     #box1 {
-   
       display:flex;
       justify-content:center;
       text-align: center;
@@ -147,7 +136,6 @@ hr {
       display:flex;
       justify-content:center;
       margin-top: 50px;
-    
     }
     #projet {
    display:flex;
@@ -156,17 +144,15 @@ hr {
     }
     #photo_moi {
       width: 90%;
-     
     }
      #navbarNav {
       background-color:black;
-      
-      
     }
-
     }
+   
+    
 
-  
+
 
 
 
